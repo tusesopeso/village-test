@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>特定商取引法に基づく表記 | Village</title>
+<!--
+  Village（ビレッジ）の Web 版の「特定商取引法に基づく表記」（2026-11-23。売り手の情報は SASHIMIKURAGE の表記と同じ＝トシが決めた）。
+  Web 版を GitHub Pages に上げるときに、このフォルダのページも build/pages に写す（CLAUDE.md の「Web 版の置き場所」）。
+  品物と値段を変えたら、ここも直す（scripts/coin_shop.gd の PACKS・scripts/supporter.gd の PLANS・サーバーの pay と同じに）。
+-->
+<style>
+  :root { --bg: #ffffff; --text: #1f1d24; --sub: #6b6875; --line: #e4e1ea; --head: #f6f4fa; --accent: #6a4fc4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1b1922; --text: #ece9f3; --sub: #a29fae; --line: #34303f; --head: #24212d; --accent: #b4a0f0; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif; line-height: 1.7; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.45rem; margin: 0 0 4px; }
+  h2 { font-size: 1.25rem; margin: 56px 0 4px; }
+  .sub { color: var(--sub); font-size: .85rem; margin: 0 0 20px; }
+  table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+  th, td { text-align: left; vertical-align: top; padding: 12px 10px; border-top: 1px solid var(--line); }
+  th { width: 32%; background: var(--head); font-weight: 600; color: var(--sub); }
+  tr:last-child th, tr:last-child td { border-bottom: 1px solid var(--line); }
+  ul { margin: 0; padding-left: 1.2em; }
+  a { color: var(--accent); }
+  .back { margin-top: 32px; font-size: .9rem; }
+  @media (max-width: 520px) {
+    th, td { display: block; width: 100%; }
+    th { border-top: 1px solid var(--line); padding-bottom: 4px; }
+    td { border-top: none; padding-top: 4px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>特定商取引法に基づく表記</h1>
+  <p class="sub">Village（ビレッジ）Web 版</p>
+  <table>
+    <tr><th>販売業者</th><td>大塚敏之</td></tr>
+    <tr><th>運営責任者</th><td>大塚敏之</td></tr>
+    <tr><th>所在地</th><td>〒531-0071 大阪市北区中津１丁目６−２９−３３１５</td></tr>
+    <tr><th>電話番号</th><td>080-4232-0239（平日 10:00〜18:00）</td></tr>
+    <tr><th>メールアドレス</th><td><a href="mailto:sashimikurage.support@gmail.com">sashimikurage.support@gmail.com</a></td></tr>
+    <tr><th>販売価格</th><td>
+      <ul>
+        <li>コイン（ゲームの中のお金）：30 コイン 300 円・100 コイン 1,000 円・300 コイン 3,000 円・1,000 コイン 10,000 円</li>
+        <li>月額：月額 200 円・月額 500 円</li>
+      </ul>
+      いずれも消費税込み。購入画面に表示された金額です。</td></tr>
+    <tr><th>商品代金以外の必要料金</th><td>なし（インターネットの通信料はお客様のご負担となります）</td></tr>
+    <tr><th>支払方法</th><td>クレジットカードなど、Stripe の決済画面で選べる方法</td></tr>
+    <tr><th>支払時期</th><td>
+      <ul>
+        <li>コイン：購入手続きの完了時</li>
+        <li>月額：申し込み時に初回分。以後は 1 か月ごとに、申し込んだ日と同じ日に自動で請求します</li>
+      </ul></td></tr>
+    <tr><th>商品の引渡時期</th><td>決済の完了後、すぐ（コインはゲームに届き、月額の特典はすぐに始まります）</td></tr>
+    <tr><th>月額（定期購入）について</th><td>
+      <ul>
+        <li>契約期間は 1 か月で、解約するまで自動で更新されます</li>
+        <li>解約は、ゲームの「月額（サポーター）」の画面の「申しこみの確認・変更・解約」から、いつでもできます</li>
+        <li>解約しても、支払い済みの期間の終わりまで特典を使えます（日割りの返金はありません）</li>
+        <li>月額 200 円から 500 円に変えると差額をその場で請求し、500 円から 200 円に変えると次の期間から変わります</li>
+      </ul></td></tr>
+    <tr><th>返品・キャンセル</th><td>デジタルの商品のため、決済完了後の返金・キャンセルは原則としてお受けできません。ただし、サービスに重大な不具合があった場合は、上のメールアドレスまでご連絡ください。内容を確認のうえ対応します。</td></tr>
+    <tr><th>動作環境</th><td>インターネットに接続できる環境と Web ブラウザ（最新の Safari・Chrome など）</td></tr>
+    <tr><th>未成年の方のご購入</th><td>保護者の方の同意を得てからご購入ください</td></tr>
+  </table>
+
+  <h2 lang="en">Specified Commercial Transactions Act</h2>
+  <p class="sub" lang="en">Village — Web version (Japanese law disclosure)</p>
+  <table lang="en">
+    <tr><th>Seller</th><td>Toshiyuki Otsuka</td></tr>
+    <tr><th>Head of operations</th><td>Toshiyuki Otsuka</td></tr>
+    <tr><th>Address</th><td>1-6-29-3315 Nakatsu, Kita-ku, Osaka 531-0071, Japan</td></tr>
+    <tr><th>Phone</th><td>+81-80-4232-0239 (weekdays 10:00–18:00 JST)</td></tr>
+    <tr><th>Email</th><td><a href="mailto:sashimikurage.support@gmail.com">sashimikurage.support@gmail.com</a></td></tr>
+    <tr><th>Prices</th><td>
+      <ul>
+        <li>Coins (in-game currency): 30 coins ¥300, 100 coins ¥1,000, 300 coins ¥3,000, 1,000 coins ¥10,000</li>
+        <li>Membership: ¥200 per month, ¥500 per month</li>
+      </ul>
+      Tax included. The amount shown on the purchase screen applies.</td></tr>
+    <tr><th>Additional fees</th><td>None (internet connection fees are paid by the customer)</td></tr>
+    <tr><th>Payment methods</th><td>Credit card and other methods offered on the Stripe payment page</td></tr>
+    <tr><th>Payment timing</th><td>
+      <ul>
+        <li>Coins: when the purchase is completed</li>
+        <li>Membership: the first month when you subscribe, then automatically every month on the same day</li>
+      </ul></td></tr>
+    <tr><th>Delivery</th><td>Immediately after payment (coins arrive in the game, and membership perks start right away)</td></tr>
+    <tr><th>Membership (subscription)</th><td>
+      <ul>
+        <li>Each period is one month and renews automatically until you cancel</li>
+        <li>You can cancel anytime from "View, change or cancel" on the Membership screen in the game</li>
+        <li>After cancelling, perks continue until the end of the paid period (no prorated refunds)</li>
+        <li>Switching from ¥200 to ¥500 charges the difference right away; switching from ¥500 to ¥200 takes effect from the next period</li>
+      </ul></td></tr>
+    <tr><th>Refunds / cancellations</th><td>Because these are digital goods, refunds and cancellations are generally not accepted after payment. If there is a serious problem with the service, please contact us at the email address above and we will look into it.</td></tr>
+    <tr><th>System requirements</th><td>An internet connection and a web browser (a recent version of Safari, Chrome, etc.)</td></tr>
+    <tr><th>Minors</th><td>Please get permission from a parent or guardian before purchasing</td></tr>
+  </table>
+
+  <p class="back"><a href="./">ゲームにもどる / Back to the game</a></p>
+</main>
+</body>
+</html>
