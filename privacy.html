@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー | Village</title>
+<!--
+  Village（ビレッジ）のプライバシーポリシー（2026-11-24。SASHIMIKURAGE の下書き ~/egami-legend/docs/legal/ を参考に、ビレッジに合わせて書いた）。
+  Web 版と同じ場所に置き、ゲームの「その他」から開く。App Store Connect のプライバシーポリシーの URL にも使う。
+  集める情報・預ける先（Supabase・Anthropic・Stripe・Apple・GitHub）を変えたら、ここも直す。出す前に専門家に確かめる。
+-->
+<style>
+  :root { --bg: #ffffff; --text: #1f1d24; --sub: #6b6875; --line: #e4e1ea; --head: #f6f4fa; --accent: #6a4fc4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1b1922; --text: #ece9f3; --sub: #a29fae; --line: #34303f; --head: #24212d; --accent: #b4a0f0; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif; line-height: 1.75; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.45rem; margin: 0 0 4px; }
+  h2 { font-size: 1.05rem; margin: 32px 0 8px; }
+  h2.lang { font-size: 1.3rem; margin-top: 64px; }
+  .sub { color: var(--sub); font-size: .85rem; margin: 0 0 20px; }
+  p, li { font-size: .93rem; }
+  ol, ul { padding-left: 1.4em; }
+  table { width: 100%; border-collapse: collapse; font-size: .88rem; margin: 8px 0; }
+  th, td { text-align: left; vertical-align: top; padding: 8px; border: 1px solid var(--line); }
+  th { background: var(--head); color: var(--sub); font-weight: 600; }
+  a { color: var(--accent); }
+  .back { margin-top: 32px; font-size: .9rem; }
+  @media (max-width: 520px) { table { font-size: .8rem; } th, td { padding: 6px; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>プライバシーポリシー</h1>
+  <p class="sub">Village（ビレッジ）</p>
+  <p>Village（以下「本サービス」）の運営者（「<a href="tokushoho.html">特定商取引法に基づく表記</a>」に記載。以下「運営者」）は、ユーザーの情報を次のとおり取り扱います。</p>
+
+  <h2>1. 取得する情報</h2>
+  <ol>
+    <li>アカウントの情報：本サービスは、名前やメールアドレスの登録なしで遊べます。はじめて開いたときに、端末ごとに名前のないアカウント（番号）を自動で作ります。</li>
+    <li>ゲームの情報：村のデータ（村人・家族・建物・村の名前、村人に付けた名前など）、コインの出入りの記録、ランキングの点、時代のごほうびの記録</li>
+    <li>購入の情報：購入した商品、金額、日時、決済の番号（Stripe の支払い・お客さま・月額の番号、App Store の取引の番号など）、月額の状態。<strong>カード番号などの支払いの情報は、運営者は受け取らず、Stripe または Apple が管理します。</strong>Web 版の決済画面で入力したメールアドレスは Stripe が管理し、運営者は決済の確認と問い合わせへの対応のためにだけ見ることがあります。</li>
+    <li>生まれた年と月：はじめて購入するときに入力していただきます（13〜17 歳の方の 1 か月の購入額の上限のため）。</li>
+    <li>引き継ぎの情報：引き継ぎコードと合言葉（そのままの形では保存せず、元に戻せない形に変えて保存します）、引き継いだ記録</li>
+    <li>問い合わせの情報：問い合わせの内容、連絡先</li>
+    <li>通信の記録：本サービスや委託先のサーバーが自動で記録する IP アドレス、日時、端末・ブラウザの種類など</li>
+  </ol>
+
+  <h2>2. 利用目的</h2>
+  <ol>
+    <li>本サービスの提供（村のデータの保存と復元、引き継ぎ、コイン・月額の特典の付与、ランキング・時代のごほうび）</li>
+    <li>新聞・村人のセリフ・一代記の文章の作成（AI を使います。第 3 項）</li>
+    <li>購入の確認、返金・支払いの申し立てへの対応、13〜17 歳の方の購入額の上限の確認</li>
+    <li>不正行為の防止（端末の時計の書きかえ、セーブデータの改ざんなど）、利用規約に違反する行為への対応</li>
+    <li>問い合わせへの対応、重要なお知らせ</li>
+  </ol>
+
+  <h2>3. 外部の事業者への委託</h2>
+  <p>本サービスは、次の事業者に情報の取り扱いを委託しています。外国にある事業者を含みます。</p>
+  <table>
+    <tr><th>事業者</th><th>目的</th><th>主に扱う情報</th><th>国・地域</th></tr>
+    <tr><td>Supabase, Inc.</td><td>アカウント、データベース、村のデータの預かり、サーバーの処理</td><td>第 1 項のアカウント・ゲーム・購入・生まれた年と月・引き継ぎの情報、通信の記録</td><td>米国の事業者。データは日本（東京）に保存</td></tr>
+    <tr><td>Anthropic, PBC</td><td>新聞・村人のセリフ・一代記の文章の作成（Claude）</td><td>村のできごとの記録（村人の名前・できごとなど。ユーザーの名前や連絡先は送りません）</td><td>米国</td></tr>
+    <tr><td>Stripe, Inc.（および関連会社）</td><td>Web 版の決済、月額の管理</td><td>購入の情報（カードの情報は Stripe が管理）</td><td>米国ほか</td></tr>
+    <tr><td>Apple Inc.</td><td>App Store での配信とアプリ内課金</td><td>購入の情報</td><td>米国</td></tr>
+    <tr><td>GitHub, Inc.</td><td>Web 版のページの配信</td><td>通信の記録</td><td>米国</td></tr>
+  </table>
+  <p>法令に基づく場合などを除き、ユーザーの同意なく、上記以外の第三者に個人情報を提供することはありません。</p>
+  <p><strong>外国にある事業者への委託について：</strong>上の表の事業者は、利用規約・データの取り扱いに関する取り決めにより、日本の個人情報保護法で求められる措置に相当する措置をとる体制を整えています。運営者は、その取り扱いの状況を必要に応じて確認します。米国などの個人情報の保護に関する制度は、個人情報保護委員会のウェブサイトの「外国における個人情報の保護に関する制度等の調査」で確認できます。これらの措置の内容は、第 11 項の問い合わせ先に請求すると、お知らせします。</p>
+
+  <h2>4. 他のユーザーに表示される情報</h2>
+  <p>ランキングと歴史書には、村の名前（はじめに来た家族の名字の「〇〇村」）と点が、他のユーザーに表示されます。だれの村かは表示しません。ユーザーが自分で付けた村の名前は、いまは他のユーザーには表示しません。</p>
+
+  <h2>5. 保存する期間</h2>
+  <ol>
+    <li>アカウントがある間は、本サービスの提供に必要な期間保存します。</li>
+    <li>購入の記録とコインの出入りの記録は、税務・会計と法令（資金決済法など）のため、7 年保存します。</li>
+    <li>削除の依頼を受けた場合も、前号の記録と、委託先（Supabase）のバックアップに残る情報（最長 30 日程度。その後は自動で消えます）は残ることがあります。</li>
+  </ol>
+
+  <h2>6. 削除、開示・訂正・利用停止の請求</h2>
+  <p>村のデータとアカウントの削除、保有する個人情報の開示・訂正・利用停止を希望する場合は、第 11 項の問い合わせ先に、ゲームの「その他」に表示される「アカウントの番号」を添えてご連絡ください。本人確認のうえで、法令に従って対応します。</p>
+
+  <h2>7. 安全管理</h2>
+  <p>通信の暗号化、データベースへの接続の制限（本人の情報だけを読み書きできる仕組み）、運営者だけが使える操作の制限、引き継ぎの合言葉などを元に戻せない形で保存することなど、情報の漏えい・改ざんを防ぐための措置をとります（外的環境の把握：米国の事業者のサービスを使い、主に日本で保存・処理しています。それぞれの国の個人情報の保護に関する制度を確認したうえで、上記の措置をとります）。</p>
+
+  <h2>8. 未成年のユーザー</h2>
+  <p>本サービスの対象は 13 歳以上です。18 歳未満のユーザーは、親権者などの法定代理人の同意を得たうえで本サービスを利用し、購入してください。</p>
+
+  <h2>9. 端末に保存する情報（Cookie など）</h2>
+  <p>本サービスは、村のデータ・ログインの状態・ゲームの設定を、端末（Web 版ではブラウザの保存領域の IndexedDB など）に保存します。広告を表示せず、広告や行動の追跡のための Cookie・解析ツールは使っていません。Web 版の決済画面（Stripe）では、Stripe が Cookie を使うことがあります。</p>
+
+  <h2>10. 改定</h2>
+  <p>このポリシーを変更する場合は、効力が生じる日と変更の内容を、本サービス内またはこのページで事前に告知します。</p>
+
+  <h2>11. 問い合わせ先</h2>
+  <p><a href="mailto:sashimikurage.support@gmail.com">sashimikurage.support@gmail.com</a> までメールでご連絡ください。運営者の名称・所在地などは「<a href="tokushoho.html">特定商取引法に基づく表記</a>」に記載しています。</p>
+  <p class="sub">制定日：2026 年 11 月 24 日</p>
+
+  <h2 class="lang" lang="en">Privacy Policy</h2>
+  <div lang="en">
+  <p>The operator of Village (the "Service"), as listed in the <a href="tokushoho.html">Legal disclosure</a> (the "Operator"), handles user information as follows. This English version is a translation; the Japanese version prevails.</p>
+  <h2>1. Information we collect</h2>
+  <ol>
+    <li>Account: You can play without registering a name or email. When you first open the Service, an anonymous account (a number) is created for your device.</li>
+    <li>Game data: your village data (villagers, families, buildings, village and villager names you enter), coin records, ranking points, and era reward records.</li>
+    <li>Purchases: items, amounts, dates, payment IDs (Stripe payment, customer and subscription IDs; App Store transaction IDs), and membership status. <strong>We do not receive card numbers or other payment details; Stripe or Apple manages them.</strong> The email address you enter on the Stripe payment page is managed by Stripe; we may view it only to confirm payments and answer inquiries.</li>
+    <li>Birth year and month, which you enter before your first purchase (for the monthly spending limit for ages 13–17).</li>
+    <li>Transfer data: transfer codes and passphrases (stored only in a one-way, non-reversible form) and transfer records.</li>
+    <li>Inquiries: the content of your inquiry and your contact details.</li>
+    <li>Access logs automatically recorded by our and our providers' servers, such as IP address, time, and device/browser type.</li>
+  </ol>
+  <h2>2. How we use it</h2>
+  <ol>
+    <li>To provide the Service (saving and restoring villages, transfers, coins and membership perks, rankings and era rewards).</li>
+    <li>To write newspapers, villager lines and biographies using AI (see section 3).</li>
+    <li>To confirm purchases, handle refunds and payment disputes, and apply the spending limit for ages 13–17.</li>
+    <li>To prevent cheating (such as changing the device clock or tampering with save data) and handle violations of the Terms of Service.</li>
+    <li>To answer inquiries and send important notices.</li>
+  </ol>
+  <h2>3. Service providers</h2>
+  <p>We entrust information to the following providers, including providers outside Japan: Supabase, Inc. (accounts, database and server processing; a US company, with data stored in Tokyo, Japan), Anthropic, PBC (writing newspapers, villager lines and biographies with Claude; we send village records such as villager names and events, never your name or contact details; USA), Stripe, Inc. and affiliates (Web payments and memberships; USA and others), Apple Inc. (App Store distribution and in-app purchases; USA), and GitHub, Inc. (serving the Web pages; USA). Except as required by law, we do not provide personal information to other third parties without your consent. These providers maintain measures equivalent to those required under Japan's Act on the Protection of Personal Information; details are available on request.</p>
+  <h2>4. Information shown to other users</h2>
+  <p>Rankings and the history book show village names (the founding family's surname plus "Village") and points to other users, without showing who owns them. Village names you enter yourself are not currently shown to other users.</p>
+  <h2>5. Retention</h2>
+  <p>We keep information while your account exists. Purchase and coin records are kept for 7 years for tax, accounting and legal (e.g., the Payment Services Act) purposes. Backups at our provider may remain for up to about 30 days.</p>
+  <h2>6. Deletion and other requests</h2>
+  <p>To request deletion of your village data and account, or disclosure, correction or suspension of use of your personal information, contact us at the address in section 11 with the "Account number" shown under "More" in the game. We will respond as required by law after verifying your identity.</p>
+  <h2>7. Security</h2>
+  <p>We use encrypted connections, database access controls that only allow users to read and write their own data, restricted operator-only operations, and one-way storage of transfer passphrases. We use services of US companies and mainly store and process data in Japan, taking these measures after reviewing the relevant countries' privacy regimes.</p>
+  <h2>8. Minors</h2>
+  <p>The Service is for ages 13 and up. Users under 18 must have permission from a parent or guardian to use the Service and make purchases.</p>
+  <h2>9. Data stored on your device (cookies etc.)</h2>
+  <p>The Service stores village data, sign-in state and settings on your device (in the Web version, in browser storage such as IndexedDB). We show no ads and use no advertising or tracking cookies or analytics tools. Stripe may use cookies on its payment page.</p>
+  <h2>10. Changes</h2>
+  <p>If we change this policy, we will announce the effective date and the changes in the Service or on this page in advance.</p>
+  <h2>11. Contact</h2>
+  <p>Email <a href="mailto:sashimikurage.support@gmail.com">sashimikurage.support@gmail.com</a>. The Operator's name and address are in the <a href="tokushoho.html">Legal disclosure</a>.</p>
+  <p class="sub">Effective: November 24, 2026</p>
+  </div>
+
+  <p class="back"><a href="terms.html">利用規約 / Terms of Service</a>　<a href="./">ゲームにもどる / Back to the game</a></p>
+</main>
+</body>
+</html>
